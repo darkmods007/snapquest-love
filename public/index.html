@@ -738,7 +738,7 @@
                         
                         // Liste des morceaux
                         React.createElement('div', { className: 'bg-slate-800/50 backdrop-blur-sm rounded-3xl border border-slate-700 p-6' },
-                            React.createElement('h2, { className: 'text-xl font-bold text-white mb-4' }, 'Playlist Communautaire'),
+                            React.createElement('h2', { className: 'text-xl font-bold text-white mb-4' }, 'Playlist Communautaire'),
                             audios.length === 0 ? React.createElement('p', { className: 'text-center text-slate-500 py-8 font-medium' }, 'Aucun morceau pour le moment. Sois le premier a en ajouter un !') :
                             React.createElement('div', { className: 'space-y-3' }, audios.map(audio => {
                                 const isOwner = audio.user_id === user.id;
